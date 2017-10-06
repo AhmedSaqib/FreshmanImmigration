@@ -1,24 +1,74 @@
-boolean1 = "False"
-count = 0
-s = ""
-list1 = []
-string1 = raw_input("please enter the word =")
-k = raw_input("please enter the integer k =")
-k = int(k)
-length = len(string1)
-length = int(length)
-segments = length / k
+NumbersList = []
+min1= 0
+min2 = 100000
+NewList =[]
+n = raw_input("Please enter number N =")
+if n = 2:
+    number1 = raw_input()
+    score1 = raw_input()
+    list1 = [number1,score1]
+    number2= raw_input()
+    score2 = raw_input()
+    list2 = [number2,score2]
+    NumberList=[list1,list2]
 
-for i in range(segments):
-    for x in range(k):
-        for y in range(len(s)):
-            if string1[i] == s[y]:
-               boolean1 = "True"
-        if boolean1 == "False":
-            s = s + string1[count]
-        count = count + 1
-    list1 =  list1 + [s]
-    s = ""
-    boolean1 = "False"
-for i in range(len(list1)):
-    print list1
+if n == 3:
+    number1 = raw_input()
+    score1 = raw_input()
+    list1 = [number1,score1]
+    number2= raw_input()
+    score2 = raw_input()
+    list2 = [number2,score2]
+    NumberList=[list1,list2]
+    number3= raw_input()
+    score3 = raw_input()
+    list3 = [number3,score3]
+    NumberList=[list1,list2,list3]
+
+if n==4:
+    number1 = raw_input()
+    score1 = raw_input()
+    list1 = [number1,score1]
+    number2= raw_input()
+    score2 = raw_input()
+    list2 = [number2,score2]
+    NumberList=[list1,list2]
+    number3= raw_input()
+    score3 = raw_input()
+    list3 = [number3,score3]
+    number4 = raw_input()
+    score4 = raw_input()
+    list4 = [number4,score4]
+    NumberList=[list1,list2,list3,list4]
+
+if n==5:
+    number1 = raw_input()
+    score1 = raw_input()
+    list1 = [number1,score1]
+    number2= raw_input()
+    score2 = raw_input()
+    list2 = [number2,score2]
+    NumberList=[list1,list2]
+    number3= raw_input()
+    score3 = raw_input()
+    list3 = [number3,score3]
+    number4 = raw_input()
+    score4 = raw_input()
+    list4 = [number4,score4]
+    number5 = raw_input()
+    score5 = raw_input()
+    list5 = [number5,score5]
+    NumberList=[list1,list2,list3,list4,list5]
+
+for i in range(len(NumberList)):
+    if NumberList[i][1] < min1:
+        min1 = NumberList[i][1]
+        Newlist =  List2
+        List2 = NumberList[i]
+        min2 = min1
+    elif NumberList[i][1] = min1:
+        Newlist = Newlist + [NumberList[i]]
+  
+for i in range(len(Newlist)):
+    print Newlist[i][0] , Newlist[i][1]
+               
